@@ -8,6 +8,15 @@ height=600
 screen=pygame.display.set_mode((width,height))
 pygame.display.set_caption("Mad Races")
 
+background=pygame.image.load("src\images\background.png")
+car_sprite=pygame.image.load("src\images\car.png")
+
+car=Car(width//2,height*0.80,100,100,5,width,height)
+obstacles=[]
+
+def RedrawScreen():
+    screen.blit(background,(0,0),(width,height))
+
 run=True
 while run:
 
