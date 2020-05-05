@@ -1,5 +1,6 @@
 import pygame
 from pygame import *
+import os
 from Car import Car
 from Obstacle import Obstacle
 
@@ -8,7 +9,8 @@ height=600
 screen=pygame.display.set_mode((width,height))
 pygame.display.set_caption("Mad Races")
 
-background=pygame.image.load("Background.png")
+
+back=pygame.movie.Movie("images/Background.png")
 car_sprite=pygame.image.load("images\car.png")
 
 car=Car(width//2,height*0.80,100,100,5,width,height)
